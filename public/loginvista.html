@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+
+</head>
+
+<body>
+
+
+
+    <form class="formulario" id="formu">
+
+        <h1>REGISTRO</h1>
+        
+        <div class="contenedor">
+
+
+
+            <div class="input-contenedor">
+
+                <input type="text" id="Name" placeholder="Nombre">
+
+            </div>
+            <div class="input-contenedor">
+
+                <input type="email" id="email" placeholder="Correo Electronico">
+
+            </div>
+            <div class="input-contenedor">
+
+                <input type="text" id="Telefono" placeholder="Telefono">
+
+            </div>
+            <div class="input-contenedor">
+                <input type="text" id="direccion" placeholder="Direccion">
+
+            </div>
+
+            <div class="input-contenedor">
+
+                <input id="pasword" type="password" placeholder="Contraseña">
+
+            </div>
+            
+            <input type="submit" onclick="pasat()"  value="HOME" class="button" id="login">
+            <input type="submit" value="REGISTRAR" class="button" id="regis">
+
+
+        </div>
+    </form>
+
+    
+    <script>
+        
+
+        regis.addEventListener('click', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('Name').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('Telefono').value;
+            const direccion = document.getElementById('direccion').value;
+            const contraseña = document.getElementById('pasword').value;
+            console.log(email, contraseña);
+            alert("Esta funcion aun sigue en desarrollo gracias por al comprencion :3");
+
+        });
+
+        
+        function pasat(){
+            window.location.href = "/index.html";
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
